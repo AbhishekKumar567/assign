@@ -5,12 +5,12 @@ const addProduct = async (req,res) =>{
    
     try{
        
-       const product = await Product.create(req.body)
+       const produc = await Product.create(req.body)
        console.log(product)
 
         res.status(201).json({
             success:true,
-            product,
+            produc,
            
         })
 
